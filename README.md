@@ -7,3 +7,6 @@
     * *  * * *  *      *
     **   * **   *      *
     ****** ******      * 
+### Usage
+    chmod 777 setup.sh
+    ./setup.sh
