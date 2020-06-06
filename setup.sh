@@ -12,7 +12,7 @@ case $sys in
 esac
 
 pre='https://github.com/CyberDemon-crypto/'
-repos=('vowels_consonants' 'P2P' 'matrix')
+repos=('vowels_consonants' 'P2P' 'matrix' 'wallet')
 clear
 echo [1]Install
 echo [2]Delete
