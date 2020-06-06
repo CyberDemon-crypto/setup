@@ -1,7 +1,6 @@
-#!/bin/bash
+#!/usr/bin/bash
 # made by https://github.com/CyberDemon-crypto
 sys=$(lsb_release -si)
-
 case $sys in
   ManjaroLinux|ArchLinux)
     pamac install git
@@ -10,16 +9,13 @@ case $sys in
     apt-get install git
     ;;
 esac
-
 pre='https://github.com/CyberDemon-crypto/'
-repos=('vowels_consonants' 'P2P' 'matrix' 'wallet')
+repos=('vowels_consonants' 'P2P' 'matrix' 'setup' 'wallet')
 clear
-echo [1]Install
-echo [2]Delete
+printf '[1]Install\n[2]Delete\n'
 read option
-cd $HOME
+cd "$HOME"
 clear
-
 case $option in
   1)
     mkdir cyberdemon
@@ -28,8 +24,10 @@ case $option in
       do
         printf "cloning into \u001b[95m%s$repo\u001b[0m...\n"
         git clone "$pre$repo" -q
-        cd $repo
-        chmod +x "$repo.py"
+        cd "$repo"
+        chmod 777 -f "$repo.py"
+        chmod 777 -f "$repo.sh"
+        chmod 777 -f "setup.sh"
         cd ..
         printf '\u001b[1A\u001b[93mInstalled                                                                               \u001b[0m\n'
       done
