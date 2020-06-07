@@ -8,7 +8,11 @@
     **   * **   *      *
     ****** ******      * 
 ### Usage
-    chmod 777 setup.sh
-    ./setup.sh
+```
+chmod 777 setup.sh
+./setup.sh
+```
 ### P.S.
-    To update repositories press delete and install again... or prompt me a better way
+```
+To update repositories press delete and install again... or prompt me a better way
+```
