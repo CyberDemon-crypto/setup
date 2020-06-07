@@ -10,7 +10,7 @@ case $sys in
     ;;
 esac
 pre='https://github.com/CyberDemon-crypto/'
-repos=('vowels_consonants' 'P2P' 'matrix' 'setup' 'wallet')
+repos=('vowels_consonants' 'P2P' 'matrix' 'setup' 'wallet' 'LCD')
 clear
 printf '[1]Install\n[2]Delete\n'
 read option
